@@ -1,0 +1,90 @@
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.color{
+    height: 100px;
+    width: 100vw;
+}
+.lightblue{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 50%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 30%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+
+
+
+.lightblue1{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 90%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.lightblue2{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 85%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.lightblue3{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 80%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.lightblue4{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 70%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.lightblue5{
+    --heu : 202;
+    --saturation: 100%;
+    --lightness: 60%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+
+.darkblue1{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 50%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue2{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 40%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue3{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 30%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue4{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 20%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue5{
+    --heu : 209;
+    --saturation: 100%;
+    --lightness: 10%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}

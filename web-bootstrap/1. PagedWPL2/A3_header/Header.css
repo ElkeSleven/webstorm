@@ -1,0 +1,142 @@
+
+
+:root{
+    --heu-lightblue : 202;
+    --saturation-lightblue: 100%;
+    --lightness-lightblue: 50%;
+    --lightblue: hsl(var(--heu-lightblue), var(--saturation-lightblue), var(--lightness-lightblue));
+
+    --heu-darkblue : 209;
+    --saturation-darkblue: 100%;
+    --lightness-darkblue: 30%;
+    --darkblue  : hsl(var(--heu-darkblue), var(--saturation-darkblue), var(--lightness-darkblue));
+
+    --lightgray: #eee
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    --dark-color: 0257A9FF
+
+}
+.lightblue{
+    --heu-lightblue : 202;
+    --saturation-lightblue: 100%;
+    --lightness-lightblue: 50%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+.darkblue{
+    --heu-darkblue : 209;
+    --saturation-darkblue: 100%;
+    --lightness-darkblue: 30%;
+    background: hsl(var(--heu), var(--saturation), var(--lightness));
+}
+
+
+header{
+    position: fixed;
+    width: 100vw;
+}
+.none-display{
+    display: none;
+}
+.flex{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    padding: 0.5rem;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+    align-items:flex-end;
+    justify-content: space-between;
+}
+
+/* logo */
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.logo-img{
+    width: 5em ;
+    height: auto;
+}
+.logo-name, .logo-slogan{
+    color:var(--darkblue);
+    font-family: "Times New Roman", serif;
+}
+.logo-name{
+    font-size: 1.6em;
+}
+.logo-slogan{
+    font-size: 0.25em;
+    font-weight: bolder;
+}
+
+
+/*nav */
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+/* nav navbar*/
+.navbar{
+    align-self: center;
+    justify-self: flex-end;
+}
+.navbar ul{
+    gap: 1em;
+}
+.navbar a, .navbar i{
+    color: var(--darkblue);
+}
+.navbar a:hover, .navbar i:hover{
+    color: var(--lightblue);
+}
+
+
+/*nav icons*/
+.icons{
+
+}
+.icons button {
+    border: none;
+    border-radius: 15%;
+    margin: 0 0.155rem ;
+    width: 30px;
+    height:30px;
+}
+.icons i{
+    border: none;
+    background-color: var(--lightgray);
+    color: black;
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    border-radius: 0.5em;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.icons button:hover , .icons i:hover{
+    --lightness-lightblue: 65%;
+    background-color: hsl(var(--heu-lightblue), var(--saturation-lightblue), var(--lightness-lightblue));
+    color: white;
+}

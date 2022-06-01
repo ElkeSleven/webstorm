@@ -1,0 +1,121 @@
+
+/* grid layoud */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header" "navbar" "main" "footer";
+    width: available;
+    height: 100vh;
+}
+.header{
+    grid-area: header;
+}
+.navbar{
+    grid-area: navbar;
+}
+.main{
+    grid-area: main;
+}
+.footer{
+    grid-area: footer;
+}
+:root{
+    --card: #f2f2f2;  /* background-color card*/
+    --btn_hover: #ff8800;
+}
+
+/* main */
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.items{
+    background-color: var(--card);
+    margin: 10px;
+    padding: 15px;
+    border: 0.2px solid black;
+    border-radius: 1.125rem;
+}
+
+
+/*.card{
+    height: 350px ;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}*/
+
+.card{
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas:
+            "ct ct" "ci cd" ". cf";
+}
+.card_title{
+    grid-area: ct;
+}
+.card_img{
+    grid-area: ci;
+}
+.card_description{
+    grid-area: cd;
+}
+.card_footer{
+    grid-area: cf;
+}
+
+.card_title{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.card_img{
+    height: auto;
+    width: 100px;
+    padding: 5px;
+}
+.card_description{
+    font-size: 1.125rem;
+    padding: 10px;
+}
+.card_footer{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+.card_footer button{
+    border: none;
+    border-radius: 0.125rem;
+    text-decoration: none;
+    margin: 10px;
+    background-color: white;
+    color: black;
+    font-size: 0.95rem;
+}
+.card_footer button:hover{
+    background-color: var(--btn_hover);
+    color: white;
+}
+/* responsive */
+@media (max-width: 700px) {
+.flex-row{
+    flex-direction: column;
+    align-items: center;
+}
+}
+

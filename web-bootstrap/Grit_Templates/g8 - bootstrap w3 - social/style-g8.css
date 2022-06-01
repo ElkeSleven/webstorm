@@ -1,0 +1,83 @@
+
+
+/* flex general */
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+
+}
+.flex-content{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+   height: max-content;
+
+}
+
+/* flexbox van aside1 */
+
+/* flexbox van aside2 */
+.img{
+
+    flex-grow: 1;
+    background-size: 70%;
+    background-image: url("../assets/pineappel.jpg");
+    padding: 25%;
+
+
+}
+/* flexbox van main */
+
+
+
+
+/* grid layoud */
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 5fr auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "header"
+             "aside1"
+            "main"
+            "aside2"
+            "footer";
+    height: 200vh;
+    gap: 1rem;
+}
+.header{
+    background-color: #4DB6AC;
+    grid-area: header;
+}
+.aside1{
+    background: #7c5cf3;
+    grid-area: aside1;
+}
+.aside2{
+    background-color: #7d068f;
+    grid-area: aside2;
+}
+.main{
+    background: #ef1313;
+    grid-area: main;
+}
+.footer{
+    background: #7e7e7e;
+    grid-area: footer;
+}
+
+
+/* responsive */
+@media(min-width: 600px) {
+    /* grid layoud */
+    .grid{
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            "header header header"
+             "aside1 main aside2"
+            "footer footer footer";
+
+    }
+}

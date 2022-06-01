@@ -1,0 +1,65 @@
+div{
+    margin: 10px;
+    padding: 15px;
+}
+
+/* nav voorbeeld*/
+.nav-list{
+    display: flex;
+    flex-wrap: nowrap;     /* -default : nowrap */
+    gap: 1rem;           /* -default : none */
+
+
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+.nav-list{
+    justify-content: start;  /*- horizontaal -  default : start  -*/ /*als flex-direction op Column staat :
+                                                                     werkt  deze verticaal inv horizontaal */
+    align-items: stretch;   /*- verticaal -  default : stretch  -*/
+}
+.nav-list li{
+    flex-grow: 0;       /* -default : 0 */
+    flex-shrink: 1;     /* -default : 1 */
+}
+
+
+/* colums voorbeeld*/
+.colums{
+    border: 10px solid firebrick;
+
+    display: flex;
+    flex-wrap: nowrap;     /* -default : nowrap */
+    gap: 2rem;             /* -default : none */
+    flex-direction: row;  /* -default : row  - (gebruik hem in een media query (column)) */
+}
+.colums{
+     justify-content: start;  /*- horizontaal -  default : start  -*/ /*als flex-direction op Column staat :
+                                                                     werkt  deze verticaal inv horizontaal */
+     align-items: center;   /*- verticaal -  default : stretch  -*/
+ }
+.colums>*{
+    flex-grow: 0;       /* -default : 0 -*/
+    flex-shrink: 1;     /* -default : 1 -*/
+    flex-basis: auto;      /* -default : auto -*/
+    /* - 0 = zo klein mogelijk zonder te breken - */
+    /* - 300px = zet alles op 300px - (wordt niet gebruikt)  */
+    /* - 100% = zet alles op 100% van de ouder - (als shrink aanstaat willen alle cellen even groot zijn )  */
+    background-color: #eeeeee;
+
+}
+
+.card-2{
+ background-color: pink;
+    align-self: flex-start;
+}
+@media (min-width: 750px) {
+    .colums{                    /* indeling van row/column anders dan je denkt */
+        flex-direction: row;   /* -row van liks naar rechts */
+                               /* -column van boven naar onder */
+    }
+}
+

@@ -1,0 +1,18 @@
+
+
+.scroll{
+    position: sticky;
+    height: .5rem;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--background);
+}
+.scroll--inner{
+    z-index: 1;
+    background-color: var(--color-accent);
+    height: .5rem;
+    width: 0;
+    padding: 0;
+}

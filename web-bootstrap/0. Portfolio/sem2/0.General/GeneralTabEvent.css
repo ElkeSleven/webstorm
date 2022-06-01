@@ -1,0 +1,38 @@
+
+.btn-group{
+    position: sticky;
+    top: 4.5rem;
+    margin-left: 1.5rem;
+}
+button{
+    z-index: 2;
+    padding: .15rem .75rem;
+    font-weight: bolder;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    color: var(--text);
+    -webkit-text-fill-color:var(--text);
+    -webkit-text-stroke-width: .2px ;
+}
+button:hover, button.active,button a:hover{
+    background-color: var(--color-accent);
+    color: var(--text-inv);
+    -webkit-text-fill-color:var(--text);
+    -webkit-text-stroke-width: .5px ;
+}
+button a{
+    z-index: 2;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    color: var(--text-inv);
+    -webkit-text-fill-color:var(--text);
+    -webkit-text-stroke-width: .5px ;
+}
+section{
+    display: none;
+}
+section.active{
+    display: block;
+}

@@ -1,0 +1,175 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+:root {
+    --clr-primary: #74767b;
+    --clr-dark: #333;
+    --clr-neutral: #ddd;
+    --clr-light: #fff;
+    --clr-body  :red;
+}
+body {
+    font-family: basic-sans, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: var(--clr-body);
+    background: var(--clr-neutral);
+    overflow-x: hidden;
+}
+
+a { color: var(--clr-primary); }
+.content {
+    background: var(--clr-light);
+    width: 70vw;
+    padding: 3em;
+    box-shadow: 0 0 3em rgba(0,0,0,.15);
+}
+.title {
+    margin: 0 0 .5em;
+    font-weight: 900;
+    color: var(--clr-primary);
+    line-height: .8;
+}
+
+
+.nav {
+    background: var(--clr-light);
+    position: absolute;
+    top: 0;
+    transform: translateY(100%);
+}
+
+.nav {
+    transition: transform 300ms cubic-bezier(.5, 0, .5, 1) 100ms;
+}
+
+/* links in de nav-list*/
+.nav__list {
+    list-style: none;
+    margin: 0 ;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+.nav__item {
+    margin-bottom: 3em;
+}
+.nav__link {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+.nav__link:hover {
+    text-decoration: underline;
+    color: var(--clr-primary);
+}
+
+/*  x */
+.nav__toggle {
+    position: relative;
+    transform: translateY( 600%);
+    background: var(--clr-light);
+    padding: 1em .5em;
+    border: 0;
+    bottom: 0;
+    border-radius: .25em 0 0 .25em;
+}
+
+
+
+
+/*.hamburger {
+    display: block;
+    position: relative;
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 2em;
+    height: 3px;
+    background: var(--clr-dark);
+
+    transition: transform 350ms ease-in-out, opacity 200ms linear;
+}
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+.hamburger::before { bottom: 0; }
+.hamburger::after { top: 0;}*/
+
+
+/* Navigation open styles */
+.nav-open .nav {
+    transform: translateY(0);
+}
+/* Change this stuff below */
+
+/* hamburger = bb-drop-ster     nav-open = #dropdowncont.active*/
+.hamburger {
+    all: unset;
+    box-sizing: border-box;
+    display: block;
+    background: #000000;
+    height: 3px;
+    position: relative;
+    transition: background 300ms ease 300ms, transform 500ms ease;
+    transform: rotate(0);
+    width: 2em;}
+
+.hamburger::before,
+.hamburger::after {
+    all: unset;
+    box-sizing: border-box;
+    background: #000000;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transform: rotate(0);
+    transform-origin: center;
+    transition: background 300ms ease;
+    width: 100%;
+}
+
+.hamburger::before {
+    top: -9px;
+    transition: top 300ms ease 300ms,
+    transform 300ms ease;
+}
+.hamburger::after {
+    bottom: -9px;
+    transition: bottom 300ms ease 300ms,
+    transform 300ms ease;
+}
+
+.nav-open .hamburger {
+    background: transparent;
+    transition: background 300ms ease, transform 500ms ease 300ms;
+    transform: rotate(-450deg);}
+.nav-open .hamburger::before,
+.nav-open .hamburger::after {
+    background: var(--clr-primary);
+}
+
+.nav-open .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms ease,
+    transform 300ms ease 300ms;
+}
+
+.nav-open .hamburger::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms ease,
+    transform 300ms ease 300ms;
+}
+/**/

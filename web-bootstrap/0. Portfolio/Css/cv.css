@@ -1,0 +1,357 @@
+
+
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 85%;
+    height: 100%;
+    padding: 1% 0;
+    margin: 0 auto;
+    margin-bottom: 35px;
+
+}
+.mainrechts {
+    width: 30%;
+    height: 60%;
+    padding: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom:5px ;
+    display: flex;
+    flex-direction: column;
+}
+.mainlinks {
+    width: 60%;
+    height: 100%;
+    padding: 0;
+    margin: 5px;
+}
+/* foto met hover effect*/
+.container2 {
+                              width: 100%;
+                              height: 50%;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
+                              color: black;
+                              padding: 0;
+                              flex-flow: column wrap;
+                              text-align: center;
+                          }
+.container2 figure {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 0;
+    margin: 0 ;
+    background: black;
+    }
+.container2 figure:hover {
+    box-shadow: 0 0 10px 5px #808080;
+    transition: all ease-in-out 250ms;
+}
+.container2 figure:active {
+    box-shadow: 0 0 0 0;
+    border: 3px solid #FFFFFF;
+}
+.container2 figure img {
+    width: 100%;
+    height: 100%;
+}
+.container2 figure div {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border: 3px solid #575757;
+}
+
+
+/*info */
+.container3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(126, 126, 126, 0.22);
+    padding: 0;
+    margin: 5px 0 0 0;
+    flex-flow: column wrap;
+    border-left: 3px solid #000000;
+}
+.info {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 10px 10px 10px;
+    border-bottom: 1px solid #74767b;
+}
+.hardskills, .softskills, .talen {
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-direction: row;
+    margin: 20px;
+}
+.contact h2, .info h2, .hardskills h2, .softskills h2, .talen h2 {
+    justify-self: left;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+    border-bottom: 1px solid #000000;
+    margin: 0 100px 10px 0;
+}
+.contact div{
+    display: flex;
+    text-align: left;
+    flex-direction: row;
+    justify-self: left;
+
+}
+.contact a {
+    color: black;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+.containerhardskills, .containersoftskills, .containertalen {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.labels {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    color: #000000;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.progressbars {
+    display: flex;
+    flex-direction: column;
+
+}
+progress {
+    width: 225px;
+    height: 19px;
+    color: #FFFFFF;
+    border: 1px solid #74767b;
+    margin-bottom: 5px;
+}
+progress::-webkit-progress-bar {
+    border: 1px solid #575757;
+    background: #00000000;
+}
+progress::-webkit-progress-value {
+    background: #0015ff;
+}
+
+
+
+
+
+
+
+.container1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(126, 126, 126, 0.22);
+    padding: 0;
+    margin: 0;
+}
+.container1 .innercontainer1 {
+    width: 90%;
+    height: 95%;
+    display: flex;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    border-left: 2px solid rgb(79, 79, 79);
+}
+.innercontainer1 .naam {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid rgb(45, 128, 177);
+    margin: 0 10px;
+}
+.innercontainer1 h1 {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.diplomas, .werkervaring {
+    justify-self: left;
+    padding: 0;
+    border-bottom: 1px solid black;
+    margin: 10px 10px 0 10px;
+}
+.diplomas h2, .werkervaring h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+}
+.diplomascontent {
+    width: 100%;
+    border-bottom: 1px solid #2d80b1;
+    margin: 0 10px;
+}
+.werkervaringcontent {
+    width: 100%;
+    margin: 0 10px;
+}
+.diplomascontent p, li p {
+    color: black;
+    font-size: large;
+}
+li blockquote:first-of-type {
+    border-bottom: 1px solid #74767b;
+}
+blockquote{
+    font-size: large;
+}
+
+/* For mobile phones: */
+
+
+
+
+
+
+/*resposive*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+@media only screen and (max-width: 468px) {
+    main{
+        flex-direction: column;
+    }
+.container3 {width: 350%;
+text-align: left; padding: 0; margin: 0; border-style: groove}
+#foto{ visibility: collapse; margin: 0; padding: 0; height: 0;}
+
+.mainlinks {width: 100%;
+padding: 0; margin: 0; border-style: groove}
+.innercontainer1{width: 100%; padding: 0;
+    margin: 0; border-left: none ;}
+
+}
+
+
+
+/*@media screen and (max-width: 1300px) {
+    main {
+        width: 100%;
+        flex-direction: row;
+
+    }
+
+    .mainlinks {
+        width: 100%;
+
+    }
+
+    .container1 {
+        width: 100%;
+        overflow: scroll;
+    }
+.container2{
+    width: 70%;
+}
+
+    .mainrechts {
+        width: 100%;
+    }
+
+    .container3 {
+        width: 100%;
+        overflow: scroll;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.cv{
+    width: 100%;
+    margin-top: 5%;
+}
+.titlediv{
+    color: white;
+}
+.cv div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 2 1;
+    justify-content: center;
+}
+.topdiv{
+    display: flex;
+    flex-direction: column;
+}*/
+
+
+
+
+img{max-width: 25vw;
+}
+
+
+

@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Dyslexie";
+    src: url('Dyslexie_Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Dyslexie";
+    src: url('Dyslexie_Italic.ttf') format('ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Dyslexie";
+    src: url('Dyslexie_Bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Dyslexie";
+    src: url('Dyslexie_Bold_Italic.ttf') format('ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.Dyslexie_Regular{
+    font-family: Dyslexie, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.Dyslexie_Italic{
+    font-family: Dyslexie, serif;
+    font-weight: normal;
+    font-style: italic;
+
+}
+.Dyslexie_Bold{
+    font-family: Dyslexie, serif;
+    font-weight: bold;
+    font-style: normal;
+
+}
+.Dyslexie_Bold_Italic{
+    font-family: Dyslexie, serif;
+    font-weight: bold;
+    font-style: italic;
+
+}

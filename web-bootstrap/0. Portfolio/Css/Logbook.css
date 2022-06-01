@@ -1,0 +1,162 @@
+* {
+    font-family: montserrat, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body {
+    background: url("../Assets/Images/BackgroundBlue.jpg ") no-repeat;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+/* pagina inhoud */
+.logboek {
+    position: relative;
+    width: 80%;
+    color: black;
+    background: #000000;
+    opacity: 0.8;
+    text-align: center;
+    line-height: 1.5em;
+    margin: 5em auto ;
+}
+.logboek h2 {
+    color: #FFFFFF;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 1em 0;
+    border-bottom: 3px solid #2d80b1;
+    margin: 0 auto;
+}
+.logboek table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    padding: 2em 0;
+}
+.logboek table tr {
+    height: 2.5em;
+}
+.logboek table tbody tr:hover {
+    text-decoration: underline;
+    text-decoration-color: #2d80b1;
+}
+.logboek table tr th {
+    text-decoration: underline;
+    text-decoration-color: #2d80b1;
+}
+.logboek table tr th:last-child, .logboek table tr td:last-child {
+    text-align: left;
+}
+.logboek table tr th, .logboek table tr td {
+    padding: 1.5em;
+}
+/*</ pagina inhoud*/
+
+
+/* Navbar */
+nav {
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*.navtitle{
+    float: left;
+    2.Constom_Fonts-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: inline;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+nav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(41, 76, 255, 0.77);
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:45px;
+}
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*navbar*/
+
+
+
+
+/*bodem van de pagina */
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    font-family:Arial, sans-serif ;
+    padding: 0;
+    height: 4%;
+}
+#voettekst {
+    display: flex;
+    justify-content:  space-between;
+    overflow: hidden;
+}
+button {
+    color: white;
+    background-color: rgba(126, 126, 126, 0);
+    border-color: rgba(255, 0, 0, 0);
+    border-radius: 25%;
+    font-size: 20px;
+    transition: background-color 0.5s;
+    font-family: "Arial", sans-serif;
+    padding: 0;}
+button:hover{
+    background-color: #00c4ff;
+}
+/*</bodem van de pagina */
