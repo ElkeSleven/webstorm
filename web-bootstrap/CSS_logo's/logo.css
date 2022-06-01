@@ -1,0 +1,109 @@
+body{
+    align-content: center;
+}
+.hoofdcontainer{
+    height: 200px;
+    width: 200px;
+    background: #6f42c1;
+    display: block;
+    align-content: center;
+
+}
+.wrap-streepje{
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: auto;
+    margin-top: 2px;
+    padding: 0;
+}
+.streepje{
+    background: navajowhite;
+    width: 100px;
+    height: 20px;
+    border: 0.1px solid black;
+    border-radius: 5%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.book-title{
+    float: left;
+    text-decoration: none;
+    font-size: x-small;
+    margin-top: 5px;
+    margin-left: 3px;
+    padding: 0;
+    font-weight: bold;
+    display: inline-block;
+
+}
+.streepje1{
+    background-color: #7e7e7e;
+    margin-left: -3px;
+    display: block;
+}
+.streepje2{
+    background-color: #13b4ef;
+    margin-right: 0;
+    margin-left: 6px;
+    display: block;
+}
+.streepje3{
+    background-color: #95d3fc;
+    margin-left: 9px;
+    display: block;
+}
+.streepje4{
+    background-color: #7e7e7e;
+    margin-left: -3px;
+    display: block;
+
+}
+.streepje5{
+    background-color: #23488f;
+    margin-left: 5px;
+    display: block;
+}
+.streepje6{
+    background-color: #1b24d3;
+    margin-left: 0;
+    display: block;
+
+}
+.streepje7{
+    background-color: #4f4f4f;
+    margin-left: -3px;
+    display: block;
+
+}
+.streepje8{
+    background-color: #7d068f;
+    margin-left: 5px;
+    display: block;
+}
+.streepje9{
+    background-color: #d31b61;
+    margin-left: 0;
+    display: block;
+
+}
+
+
+
+/*.streepje1{
+    margin-top: 90px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+}*/
+
+
+/*.streepje{
+    box-shadow:
+       0 0px 0 20px red,       /*naar rechts - naar beneden - waasig - breete  */  /*
+       0 0 0 40px navajowhite,
+       0 0 0 60px #6f42c1,
+       0 0 0 80px navajowhite;
+       /*
+

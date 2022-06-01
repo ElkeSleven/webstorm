@@ -1,0 +1,14 @@
+section{
+    display: none;
+}
+
+section.active{
+    display: block;
+}
+
+button:hover{
+    background-color: #ffb700;
+}
+button.active{
+    background-color: red;
+}

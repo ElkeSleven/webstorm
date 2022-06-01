@@ -1,0 +1,47 @@
+
+
+body{
+    position: relative;
+}
+
+.background-overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+
+}
+.background-cr-box-outer{
+    min-height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.background-cr-box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 20%;
+    padding: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: -3;
+}
+.background-cr{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    z-index: -3;
+
+}

@@ -1,0 +1,55 @@
+:root{
+    --purple: #6610f2;
+    --color-accent: #6610f2;
+    --text: black;
+    --text-inv: white;
+    --background: white
+}
+@media (prefers-color-scheme: dark) {
+
+    :root{
+        --background: #2a2a2a  ;
+        --background-1: #121212;
+        --purple: #6610f2;
+        --color-accent: #712ae3;
+        --text: white;
+        --text-inv: black;
+    }
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+}
+
+header{
+
+    font-family: Dyslexie, Dyslexie_Italic, serif;
+    font-weight: bold;
+    font-style: normal;
+}
+header nav{
+    z-index: 1;
+    padding: 0 1rem;
+    width: 100%;
+    background-color: var(--background);
+    position:fixed;
+
+}
+
+header nav a{
+    font-size: 1.3rem;
+    margin:0 0.5rem;
+    color: var(--text);
+    -webkit-text-fill-color:var(--text);
+    -webkit-text-stroke-width: .5px ;
+    letter-spacing: 2px;
+}
+header nav a:hover{
+    color: var(--text);
+    -webkit-text-fill-color: var(--color-accent);
+    -webkit-text-stroke-width: .5px ;
+}
+

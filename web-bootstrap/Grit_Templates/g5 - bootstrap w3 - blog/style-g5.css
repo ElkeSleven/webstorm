@@ -1,0 +1,33 @@
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "aside" "main" "footer";
+    height: 100vh;gap: 1rem;
+}
+
+.aside{
+    background: #7c5cf3;
+    grid-area: aside;
+}
+.main{
+    background: #ef1313;
+    grid-area: main;
+}
+.footer{
+    background: #7e7e7e;
+    grid-area: footer;
+}
+
+
+
+@media(min-width: 600px) {
+
+    .grid{
+        grid-template-rows: 5fr 1fr;
+        grid-template-columns: 1fr 5fr;
+        grid-template-areas: "aside main"
+        "footer footer";
+    }
+}
